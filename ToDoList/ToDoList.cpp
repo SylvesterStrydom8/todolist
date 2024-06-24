@@ -28,6 +28,7 @@ int main()
 		std::cout << "2. Delete Task" << std::endl;
 		std::cout << "3. View Tasks" << std::endl;
 		std::cout << "4. Save Tasks" << std::endl;
+		std::cout << "5. Load Tasks" << std::endl;
 		std::cout << "6. Exit" << std::endl;
 		std::cin >> choice;
 
@@ -44,6 +45,9 @@ int main()
 			break;
 		case 4:
 			saveTasks(tasks, filename);
+			break;
+		case 5:
+			loadTasks(tasks, filename);
 			break;
 		case 6:
 			std::cout << "Exiting application." << std::endl;
